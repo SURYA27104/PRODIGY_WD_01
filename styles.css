@@ -1,0 +1,210 @@
+body {
+    font-family: 'Horizon', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg1.jpg');
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+   
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#navbar {
+    background-color: rgba(255, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar ul li {
+    display: inline;
+}
+
+#navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+#navbar ul li a:hover {
+    background-color: rgba(252, 252, 252, 0.932);
+    color: black;
+}
+
+main {
+    padding-top: 60px;
+}
+
+section {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+.car-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.car-gallery img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+#home { background: rgba(0, 0, 0, 0.5); }
+#models { 
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 25px;
+}
+#features { background: rgba(0, 0, 0, 0.5); }
+#gallery { background: rgba(0, 0, 0, 0.5); }
+#contact { background: rgba(0, 0, 0, 0.5); }
+
+
+.neon-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.2s;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.neon-button:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 1),
+                0 0 30px rgba(255, 255, 255, 1),
+                0 0 40px rgb(155, 155, 155)
+                0 0 50px rgb(158, 158, 158);
+}
+
+.neon-button:before, .neon-button:after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, #c4c4c4, #c9c9c9, #c4c4c4, #c9c9c9);
+    z-index: -1;
+    filter: blur(5px);
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    border-radius: 10px;
+}
+
+.neon-button:after {
+    filter: blur(20px);
+}
+
+.neon-button:hover:before, .neon-button:hover:after {
+    opacity: 1;
+}
+.car-gallery img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.car-gallery img:hover {
+    transform: scale(1.1);
+}
+.car-models img{
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 10;
+    transition: transform 0.3s ease;
+
+}
+.car-models img:hover {
+    transform: scale(1.1);
+}
+.bold-wide-text {
+    font-weight: bold; 
+    letter-spacing: 2px; 
+    font-size: 50px; 
+    font-family:Arial, sans-serif
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.shining-text {
+    font-size: 36px;
+    color: #333;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.shining-text:hover {
+    color: #fff;
+    text-shadow: 
+        0 0 5px #f5f5f5,
+        0 0 10px #adadad,
+        0 0 15px #535353,
+        0 0 20px #6b6b6b,
+        0 0 30px #8b8b8b,
+        0 0 40px #3d3c3c,
+        0 0 50px #0000009c;
+}
